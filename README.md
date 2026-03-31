@@ -29,41 +29,42 @@ The analysis is based on samples from **four healthy blood donors**.
 
 ## Analysis Overview
 
-### CpG Site Analysis
+### 1. CpG Site Analysis
 
-#### M-value Analysis (No Normalization or Filtering)
-- Overlayed histograms
-- Spearman correlation
-
-#### M-value Analysis (Quantile Normalization)
-- Overlayed histograms
-- Spearman correlation
-- Bland–Altman plots
-
-#### Beta Value Analysis
-- Calculation of beta values
-
-### Active Tuberculosis (TB) Analysis
-- Delta beta calculation
-- Principal Component Analysis (PCA)
-- Correlation matrix
-- Boxplots for the top 7 differentially methylated CpG sites (DMCs)
-
-### CpG island analysis
-- Extraction of CpG islands
-- Filtering of CpG islands
-- Normalization of Illumina beta values using Noob
-- Normalization of Epigenica beta values using cyclic loess
-- Overlaying histogram for both MBDs - read counts vs beta values
-- Histogram of read count vs number of CpG islands - Epigenica data only
-
-#### Beta values comparison
-  - - Overlaying histograms
-    - Confusion matrix
-
-### Age clock probes analysis
-- Extracting significant probes for biological age
-- Confusion matrix
-- GO enrichment analysis for misclassified probes
-- Spearman's correlation
+ #### M-value Analysis (No Normalization or Filtering)
+ - Overlayed histograms
+ - Spearman correlation
  
+ #### M-value Analysis (Quantile Normalization)
+ - Overlayed histograms
+ - Spearman correlation
+ - Bland–Altman plots
+ 
+ #### Beta Value Analysis
+ - Calculation of beta values
+ 
+ #### Active Tuberculosis (TB) Analysis
+ - Delta beta calculation
+ - Principal Component Analysis (PCA)
+ - Correlation matrix
+ - Boxplots for the top 7 differentially methylated CpG sites (DMCs)
+
+### 2. CpG island analysis
+ - Extraction of CpG islands
+ - Filtering of CpG islands
+ - Normalization of Illumina beta values using Noob
+ - Normalization of Epigenica beta values using cyclic loess
+ - Overlaying histogram for both MBDs - read counts vs beta values
+ - Histogram of read count vs number of CpG islands - Epigenica data only
+
+ #### Beta values comparison
+ - Overlaying histograms
+ - Confusion matrix
+
+### 3. Age clock probes analysis
+ - Extracting significant probes for biological age
+ - Confusion matrix
+ - GO enrichment analysis for misclassified probes
+ - Spearman's correlation
+ 
+---
