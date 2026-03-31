@@ -49,7 +49,7 @@ The analysis is based on samples from **four healthy blood donors**.
 - Correlation matrix
 - Boxplots for the top 7 differentially methylated CpG sites (DMCs)
 
-## CpG island analysis
+### CpG island analysis
 - Extraction of CpG islands
 - Filtering of CpG islands
 - Normalization of Illumina beta values using Noob
@@ -57,11 +57,11 @@ The analysis is based on samples from **four healthy blood donors**.
 - Overlaying histogram for both MBDs - read counts vs beta values
 - Histogram of read count vs number of CpG islands - Epigenica data only
 
-### Beta values comparison
+#### Beta values comparison
   - - Overlaying histograms
     - Confusion matrix
 
-## Age clock probes analysis
+### Age clock probes analysis
 - Extracting significant probes for biological age
 - Confusion matrix
 - GO enrichment analysis for misclassified probes
