@@ -1,35 +1,69 @@
-# DNA-methylation-Epigenica-vs-Illumina-EPIC-Array
+# DNA Methylation Comparison: Epigenica vs Illumina EPIC Array
 
-This GitHub page has the R and bash code for the analysis done to compare the DNA methylation technologies, EPigenica EpiFinder GenomePro, and Illumina MethylationEPIC array. 
+This repository contains R and Bash scripts used to compare two DNA methylation technologies:
 
-The data used is from 4 healthy blood donors. 
+- **Epigenica EpiFinder GenomePro**
+- **Illumina MethylationEPIC Array**
 
-The pre-processing of the data was done using the MIUNTE pipeline and Deeptools (via conda) for the EpiFinder data. BigWig files were used for downstream analysis.
+---
 
-The array data used was from the study Epigenetic rewiring of pathways related to odour perception in immune cells exposed to SARS-CoV-2 in vivo and in vitro, published in 2022. The array data starts with the IDAT files.
+## Dataset
 
-The code contains the following:
-- CpG site analysis
-  - M value analysis with no normalization and filtering
-  - - Overlaying histogram 
-  - - Spearman ranked corelation
-  - M value analysis with Quantile normalization
-    - - Overlaying histogram
-      - Spearman ranked corelation
-      - Bland-Altman plot
-  - Beta value calculation
-  - Active TB analysis
-  - - Delta beta calculation
-    - PCA plot
-    - Correlation matrix
-    - Box plots for top 7 DMCs
-- CpG island analysis
-- - Extraction of CpG islands
-  - Filtering of CpG islands
-  - Normalization of Illumina beta values using Noob
-  - Normalization of Epigenica beta values using cyclic loess
-  - Histogram of read count vs number of CpG islands - Epigenica data only
-  - Beta values analysis
-  - - Overlaying histogram for both MBDs - read counts vs beta values
-    - 
+The analysis is based on samples from **four healthy blood donors**.
+
+---
+
+## Data Processing
+
+### EpiFinder Data
+- Pre-processing performed using the **MIUNTE pipeline**
+- Additional processing with **DeepTools** (via Conda)
+- Output generated as **BigWig files**, used for downstream analysis
+
+### Illumina EPIC Array Data
+- Data obtained from the study:  
+  *"Epigenetic rewiring of pathways related to odour perception in immune cells exposed to SARS-CoV-2 in vivo and in vitro"* (2022)
+- Analysis starts from **raw IDAT files**
+
+---
+
+## Analysis Overview
+
+### CpG Site Analysis
+
+#### M-value Analysis (No Normalization or Filtering)
+- Overlayed histograms
+- Spearman correlation
+
+#### M-value Analysis (Quantile Normalization)
+- Overlayed histograms
+- Spearman correlation
+- Bland–Altman plots
+
+#### Beta Value Analysis
+- Calculation of beta values
+
+### Active Tuberculosis (TB) Analysis
+- Delta beta calculation
+- Principal Component Analysis (PCA)
+- Correlation matrix
+- Boxplots for the top 7 differentially methylated CpG sites (DMCs)
+
+## CpG island analysis
+- Extraction of CpG islands
+- Filtering of CpG islands
+- Normalization of Illumina beta values using Noob
+- Normalization of Epigenica beta values using cyclic loess
+- Overlaying histogram for both MBDs - read counts vs beta values
+- Histogram of read count vs number of CpG islands - Epigenica data only
+
+### Beta values comparison
+  - - Overlaying histograms
+    - Confusion matrix
+
+## Age clock probes analysis
+- Extracting significant probes for biological age
+- Confusion matrix
+- GO enrichment analysis for misclassified probes
+- Spearman's correlation
  
