@@ -5,13 +5,9 @@ This repository contains R and Bash scripts used to compare two DNA methylation 
 - **Epigenica EpiFinder GenomePro**
 - **Illumina MethylationEPIC Array**
 
----
-
 ## Dataset
 
 The analysis is based on samples from **four healthy blood donors**.
-
----
 
 ## Data Processing
 
@@ -25,9 +21,9 @@ The analysis is based on samples from **four healthy blood donors**.
   *"Epigenetic rewiring of pathways related to odour perception in immune cells exposed to SARS-CoV-2 in vivo and in vitro"* (2022)
 - Analysis starts from **raw IDAT files**
 
----
 
 ## Analysis Overview
+The workflow integrates sequencing-based and array-based methylation data for comparative analysis. It includes the following components:
 
 ### 1. CpG Site Analysis
 
@@ -66,5 +62,4 @@ The analysis is based on samples from **four healthy blood donors**.
  - Confusion matrix
  - GO enrichment analysis for misclassified probes
  - Spearman's correlation
- 
----
+
